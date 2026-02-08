@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="sidebar">
+        <h2>My Portfolio</h2>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+
+        <section id="about">
+            <h1>About</h1>
+            <p>
+                I'm a Computer Science student focused on backend engineering,
+                DevOps, and infrastructure. I enjoy building reliable systems,
+                automation pipelines, and scalable applications.
+            </p>
+        </section>
+
+        <section id="projects">
+            <h1>Projects</h1>
+
+            <div class="project">
+                <h3>Project One</h3>
+                <p>Describe your backend/devops project here.</p>
+            </div>
+
+            <div class="project">
+                <h3>Project Two</h3>
+                <p>Another project description.</p>
+            </div>
+
+        </section>
+
+        <section id="education">
+            <h1>Education</h1>
+            <p>
+                B.Tech Computer Science — Your University<br>
+                Year — Present
+            </p>
+        </section>
+
+        <section id="contact">
+            <h1>Contact</h1>
+
+            <form onsubmit="sendMessage(event)">
+                <input placeholder="Your Name" required />
+                <input type="email" placeholder="Email" required />
+                <textarea rows="5" placeholder="Message"></textarea>
+                <button type="submit">Send</button>
+            </form>
+
+            <p id="msg"></p>
+        </section>
+    </main>
+</body>
+
+</html>
