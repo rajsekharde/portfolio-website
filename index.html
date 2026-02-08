@@ -21,50 +21,128 @@
     <main>
 
         <section id="about">
+            <div class="about-header">
+                <img src="./media/cat.jpeg" alt="Profile Photo" class="profile-pic" />
+                <div>
+                    <h1>Rajsekhar De</h1>
+                    <p class="headline">Backend Developer • Exploring DevOps & Infrastructure</p>
+
+
+                    <div class="socials">
+                        <a href="#">GitHub</a>
+                        <a href="#">LinkedIn</a>
+                        <a href="#">LeetCode</a>
+                    </div>
+                </div>
+            </div>
             <h1>About</h1>
+            <hr>
             <p>
-                I'm a Computer Science student focused on backend engineering,
-                DevOps, and infrastructure. I enjoy building reliable systems,
+                I'm a Computer Science student focused on backend engineering and
+                DevOps. I enjoy building reliable systems,
                 automation pipelines, and scalable applications.
             </p>
+            <br><br>
+
+            <div id="glazeDiv">
+                <div class="glaze">
+                    <h3>Languages</h3>
+                    <p>C, C++, Python, Go</p>
+                    <br>
+                    <h3>Databases</h3>
+                    <p>PostgreSQL, Redis, SQLite</p>
+                </div>
+                <div class="glaze">
+                    <h3>Frameworks</h3>
+                    <p>FastAPI + SQLModel</p>
+                    <br>
+                    <h3>Tools & Technologies</h3>
+                    <p>Docker, Traefik, AWS, Linux, Prometheus stack</p>
+                </div>
+                <div class="glaze"></div>
+            </div>
         </section>
 
         <section id="projects">
             <h1>Projects</h1>
+            <hr>
 
             <div class="project">
-                <h3>Project One</h3>
-                <p>Describe your backend/devops project here.</p>
-            </div>
-
-            <div class="project">
-                <h3>Project Two</h3>
-                <p>Another project description.</p>
+                <h3>Full Stack Notes App</h3>
+                <span>Dec 2025</span>
+                <br><br>
+                <p>Built a full stack notes app using React, FastAPI, PostgreSQL.</p>
+                <p> Implemented JWT authentication, deployed using Docker on an AWS EC2 instance.</p>
+                <br>
+                <p><b>Tech Stack: </b>FastAPI, React, PostgreSQL, Traefik, Docker, Alembic</p>
+                <br><br>
+                <div>
+                    <a href="https://github.com/rajsekharde/Notes-App" target="_blank" rel="noopener noreferrer">
+                        GitHub Repository
+                    </a>
+                    <br><br>
+                    <a href="https://notes-app.rajsekharde.com" target="_blank" rel="noopener noreferrer">
+                        Live Deployment
+                    </a>
+                </div>
             </div>
 
         </section>
 
         <section id="education">
             <h1>Education</h1>
-            <p>
-                B.Tech Computer Science — Your University<br>
-                Year — Present
-            </p>
+            <hr>
+            <div class="timeline">
+
+                <div class="milestone">
+                    <div class="circle"></div>
+                    <div class="edu-content">
+                        <h3>National Institute of Technology, Agartala</h3>
+                        <p>B.Tech - Computer Science & Engineering</p>
+                        <span>2024 – Present</span>
+                    </div>
+                </div>
+
+                <div class="milestone">
+                    <div class="circle"></div>
+                    <div class="edu-content">
+                        <h3>Sri Sri Ravishankar Vidyamandir, Agartala</h3>
+                        <p>CBSE - Science Stream</p>
+                        <span>2022 – 2024</span>
+                    </div>
+                </div>
+
+                <div class="milestone">
+                    <div class="circle"></div>
+                    <div class="edu-content">
+                        <h3>Holy Cross School, Agartala</h3>
+                        <p>ICSE</p>
+                        <span>2009 – 2022</span>
+                    </div>
+                </div>
+
+            </div>
         </section>
 
         <section id="contact">
             <h1>Contact</h1>
+            <hr>
+            <p><b>Email: </b>rajsekharde612@gmail.com</b></p>
+            <br>
+            <div>
+                <form onsubmit="sendMessage(event)">
+                    <input placeholder="Your Name" required />
+                    <input type="email" placeholder="Email" required />
+                    <textarea rows="5" placeholder="Message"></textarea>
+                    <button type="submit">Send</button>
+                </form>
 
-            <form onsubmit="sendMessage(event)">
-                <input placeholder="Your Name" required />
-                <input type="email" placeholder="Email" required />
-                <textarea rows="5" placeholder="Message"></textarea>
-                <button type="submit">Send</button>
-            </form>
-
-            <p id="msg"></p>
+                <p id="msg"></p>
+            </div>
         </section>
     </main>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
