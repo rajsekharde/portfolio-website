@@ -44,6 +44,7 @@ body {
 }
 
 .sidebar a:hover {
+    cursor: pointer;
     color: #2563eb;
 }
 
@@ -173,7 +174,15 @@ h1 {
 
 .project a {
     margin-right: 50px;
+    text-decoration: none;
+    color: #2a54af;
+    font-weight: 500;
 }
+
+.project a:hover {
+    color: #2563eb;
+}
+
 
 /* Contact */
 
@@ -198,7 +207,7 @@ button {
     padding: 10px 20px;
     border: none;
     border-radius: 6px;
-    background: #2563eb;
+    background: #2a54af;
     color: white;
     cursor: pointer;
 }
@@ -300,6 +309,7 @@ html {
     }
 
     .mobile-nav a:hover {
+        cursor: pointer;
         color: #2563eb;
     }
 
