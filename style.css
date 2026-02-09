@@ -5,7 +5,9 @@
 }
 
 body {
-    font-family: system-ui, -apple-system, sans-serif;
+    font-family: "Ubuntu", system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
     background: #f8fafc;
     color: #172441;
     line-height: 1.6;
@@ -74,6 +76,7 @@ section {
 }
 
 h1 {
+    font-weight: 500;
     margin-bottom: 10px;
     color: #2563eb;
 }
@@ -81,26 +84,40 @@ h1 {
 
 .about-header {
     display: flex;
-    align-items: center;
-    gap: 64px;
+    /* align-items: center; */
+    justify-content: left;
+    gap: 44px;
     margin-bottom: 100px;
 }
 
 .profile-pic {
     width: 120px;
     height: 120px;
+    margin-top: 15px;
     border-radius: 50%;
     object-fit: cover;
     border: 3px solid #2563eb;
 }
+
+/* #headline-div {
+    background: #64748b;
+} */
 
 .headline {
     color: #475569;
     margin: 10px 0 10px;
 }
 
+.socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 250px;
+}
+
 .socials a {
-    margin-right: 12px;
+    /* margin-right: 12px; */
     text-decoration: none;
     color: #003ab6;
     font-weight: 500;
@@ -113,8 +130,13 @@ h1 {
 #glazeDiv {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
     margin-top: 30px;
+    gap: 40px;
+}
+
+.glaze {
+    flex: 1;
 }
 
 
@@ -122,13 +144,14 @@ h1 {
 
 .project {
     background: white;
-    width: 50vw;
+    width: 100%;
+    max-width: 800px;
     padding: 30px;
     border-radius: 8px;
     margin-bottom: 30px;
     margin-top: 50px;
     border: 1px solid #e2e8f0;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
 
 .project span {
@@ -183,6 +206,7 @@ button:hover {
     position: relative;
     margin-top: 30px;
     padding-left: 40px;
+    padding-top: 0px;
     display: flex;
     flex-direction: column;
     /* bottom → top journey */
@@ -193,14 +217,13 @@ button:hover {
     content: "";
     position: absolute;
     left: 12px;
-    top: 0;
+    top: 10px;
     bottom: 0;
     width: 2px;
-    /*background: #e2e8f0;*/
     background: linear-gradient(to top,
             transparent,
             #d3d3d3,
-            transparent);
+            #bdbdbd);
 }
 
 .milestone {
@@ -236,14 +259,107 @@ html {
     scroll-behavior: smooth;
 }
 
-@media (max-width: 700px) {
+.mobile-nav {
+    display: none;
+}
+
+@media (max-width: 800px) {
+
+    /* Hide sidebar on phones */
     .sidebar {
-        position: static;
-        width: 100%;
-        height: auto;
+        display: none;
     }
+
+
+    /* Show top navigation */
+    .mobile-nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: #ffffff;
+        border-bottom: 1px solid #e2e8f0;
+        box-shadow: 10px 10 10px rgba(0, 0, 0, 0.08);
+        padding: 20px;
+        display: flex;
+        justify-content: space-around;
+        z-index: 1000;
+    }
+
+    .mobile-nav a {
+        color: #334155;
+        text-decoration: none;
+        transition: all 0.25s ease;
+    }
+
+    .mobile-nav a:hover {
+        color: #2563eb;
+    }
+
+    .mobile-nav a.active {
+        color: #2563eb;
+        font-weight: 700;
+        /* transform: scale(1.1); */
+        /* transform: translateY(-5px); */
+        border-bottom: 3px solid #2563eb;
+    }
+
+    .about-header {
+        margin-bottom: 60px;
+    }
+
 
     main {
         margin-left: 0;
+        padding: 60px;
+        padding-top: 0px;
     }
+
+    section {
+        padding-top: 100px;
+    }
+
+    hr {
+        margin-bottom: 20px;
+    }
+}
+
+/*main { margin-left: 0; }*/
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 240px;
+    background: #ffffff;
+    border-right: 1px solid #e2e8f0;
+    padding: 80px 40px;
+    box-shadow: 4px 0 12px rgba(0, 0, 0, 0.08);
+}
+
+.sidebar h2 {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #2563eb;
+}
+
+.sidebar a {
+    display: block;
+    color: #334155;
+    text-decoration: none;
+    margin: 1rem 0;
+    transition: all 0.25s ease;
+}
+
+.sidebar a:hover {
+    color: #2563eb;
+}
+
+.sidebar a.active {
+    color: #2563eb;
+    font-weight: 600;
+    padding-left: 12px;
+    /*transform: translateX(8px);*/
+    border-left: 3px solid #2563eb;
 }

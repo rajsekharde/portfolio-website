@@ -6,16 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
 
+    <nav class="mobile-nav">
+        <a class="section-link" href="#about">About</a>
+        <a class="section-link" href="#projects">Projects</a>
+        <a class="section-link" href="#education">Education</a>
+        <a class="section-link" href="#contact">Contact</a>
+    </nav>
+
     <nav class="sidebar">
         <h2>My Portfolio</h2>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#education">Education</a>
-        <a href="#contact">Contact</a>
+        <a class="section-link" href="#about">About</a>
+        <a class="section-link" href="#projects">Projects</a>
+        <a class="section-link" href="#education">Education</a>
+        <a class="section-link" href="#contact">Contact</a>
     </nav>
 
     <main>
@@ -23,15 +35,21 @@
         <section id="about">
             <div class="about-header">
                 <img src="./media/cat.jpeg" alt="Profile Photo" class="profile-pic" />
-                <div>
+                <div id="headline-div">
                     <h1>Rajsekhar De</h1>
                     <p class="headline">Backend Developer • Exploring DevOps & Infrastructure</p>
 
-
                     <div class="socials">
-                        <a href="#">GitHub</a>
-                        <a href="#">LinkedIn</a>
-                        <a href="#">LeetCode</a>
+                        <a href="https://github.com/rajsekharde" target="_blank" rel="noopener noreferrer">
+                            GitHub
+                        </a>
+                        <a href="https://linkedin.com/in/rajsekhar-de-5a080631a" target="_blank"
+                            rel="noopener noreferrer">
+                            LinkedIn
+                        </a>
+                        <a href="https://leetcode.com/u/foxbat05/" target="_blank" rel="noopener noreferrer">
+                            LeetCode
+                        </a>
                     </div>
                 </div>
             </div>
@@ -54,12 +72,11 @@
                 </div>
                 <div class="glaze">
                     <h3>Frameworks</h3>
-                    <p>FastAPI + SQLModel</p>
+                    <p>FastAPI + SQLModel, React</p>
                     <br>
                     <h3>Tools & Technologies</h3>
                     <p>Docker, Traefik, AWS, Linux, Prometheus stack</p>
                 </div>
-                <div class="glaze"></div>
             </div>
         </section>
 

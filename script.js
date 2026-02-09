@@ -6,7 +6,7 @@ window.onload = () => {
 
 
 const sections = document.querySelectorAll("main section");
-const navLinks = document.querySelectorAll(".sidebar a");
+const navLinks = document.querySelectorAll(".section-link");
 
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
@@ -14,10 +14,13 @@ const observer = new IntersectionObserver(entries => {
             navLinks.forEach(link => link.classList.remove("active"));
 
             const id = entry.target.id;
-            const activeLink =
+            const activeLinkSide =
                 document.querySelector(`.sidebar a[href="#${id}"]`);
+            const activeLinkTop =
+                document.querySelector(`.mobile-nav a[href="#${id}"]`);
 
-            if (activeLink) activeLink.classList.add("active");
+            if (activeLinkSide) activeLinkSide.classList.add("active");
+            if (activeLinkTop) activeLinkTop.classList.add("active");
         }
     });
 }, {
