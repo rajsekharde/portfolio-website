@@ -6,6 +6,12 @@
 
 @font-face {
     font-family: 'Ubuntu';
+    src: url('./media/fonts/Ubuntu-Light.woff2') format('woff2');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
     src: url('./media/fonts/Ubuntu-Regular.woff2') format('woff2');
     font-weight: 400;
 }
@@ -13,11 +19,29 @@
 @font-face {
     font-family: 'Ubuntu';
     src: url('./media/fonts/Ubuntu-Medium.woff2') format('woff2');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('./media/fonts/Ubuntu-Bold.woff2') format('woff2');
     font-weight: 600;
 }
 
 a, button {
   -webkit-tap-highlight-color: transparent;
+}
+
+h1 {
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #2e3b5a;
+    opacity: 1;
+}
+
+h2 {
+    font-size: 1.3rem;
+    opacity: 1;
 }
 
 body {
@@ -71,8 +95,8 @@ body {
 
 main {
     margin-left: 240px;
-    padding: 80px;
-    padding-top: 0px;
+    padding: 0px 80px;
+    
 }
 
 hr {
@@ -92,12 +116,6 @@ section {
     /*border-bottom: 1px solid #e2e8f0;*/
 }
 
-h1 {
-    font-weight: 600;
-    margin-bottom: 10px;
-    color: #2e3b5a;
-}
-
 
 .about-header {
     display: flex;
@@ -113,7 +131,7 @@ h1 {
     height: 120px;
     border-radius: 50%;
     object-fit: cover;
-    border: 3px solid #f8fafc;
+    border: 3px solid #616f91;
 }
 
 /* #headline-div {
@@ -174,13 +192,18 @@ h1 {
     padding: 30px;
     border-radius: 8px;
     margin-bottom: 30px;
-    margin-top: 50px;
+    margin-top: 30px;
     border: 1px solid #e2e8f0;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
 
 .project h3 {
     font-size: 1.2rem;
+}
+
+.projects h3 {
+    opacity: 0.7;
+    align-items: center;
 }
 
 .project span {
@@ -357,6 +380,10 @@ html {
     } */
     h1 {
         font-size: 1.7rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
     }
 
     main {

@@ -5,9 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css?v=2">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/x-icon" href="./media/RD.webp">
+    <link rel="stylesheet" href="style.css?v=3">
+    <link rel="preload" href="/media/fonts/Ubuntu-Light.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/media/fonts/Ubuntu-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/media/fonts/Ubuntu-Medium.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/media/fonts/Ubuntu-Bold.woff2" as="font" type="font/woff2" crossorigin>
 </head>
 
 <body>
@@ -31,7 +34,7 @@
 
         <section id="about">
             <div class="about-header">
-                <img src="./media/cat.jpeg" alt="Profile Photo" class="profile-pic" />
+                <img src="./media/RD.webp" alt="Profile Photo" class="profile-pic" />
                 <div id="headline-div">
                     <h1>Rajsekhar De</h1>
                     <p class="headline">Backend Developer • Exploring DevOps & Infrastructure</p>
@@ -55,23 +58,23 @@
             <hr>
             <p>
                 I'm a 2nd year Computer Science student focused on backend systems,
-                containerized deployments and Infrastructure automation.<br>I also 
+                containerized deployments and Infrastructure automation.<br>I also
                 freelance part time as a 3D Artist.
             </p>
 
             <div id="glazeDiv">
                 <div class="glaze">
-                    <h3>Languages</h3>
+                    <h2>Languages</h2>
                     <p>C, C++, Python, Go</p>
                     <br>
-                    <h3>Backend</h3>
+                    <h2>Backend</h2>
                     <p>FastAPI, SQLModel, Alembic, Locust</p>
                 </div>
                 <div class="glaze">
-                    <h3>Databases</h3>
+                    <h2>Databases</h2>
                     <p>PostgreSQL, Redis, SQLite</p>
                     <br>
-                    <h3>Tools & Technologies</h3>
+                    <h2>Tools & Technologies</h2>
                     <p>Docker, Git, Traefik, Linux, Bash, AWS, Prometheus stack</p>
                 </div>
             </div>
@@ -82,14 +85,18 @@
             <hr>
 
             <div class="project">
-                <h3>Full Stack Notes App</h3>
+                <h2>Full Stack Notes App</h2>
                 <span>Dec 2025</span>
                 <br><br>
-                <p>Built a full stack notes app using React, FastAPI, PostgreSQL.</p>
-                <p> Implemented JWT authentication, deployed using Docker on an AWS EC2 instance.</p>
+                <p>
+                    • Designed REST API handling auth + CRUD operations<br>
+                    • Implemented JWT Authentication<br>
+                    • Dockerized stack with reverse proxy<br>
+                    • Deployed on AWS EC2
+                </p>
                 <br>
                 <p><b>Tech Stack: </b>FastAPI, React, PostgreSQL, Traefik, Docker, Alembic</p>
-                <br><br>
+                <br>
                 <div>
                     <a href="https://github.com/rajsekharde/Notes-App" target="_blank" rel="noopener noreferrer">
                         GitHub Repository
@@ -101,6 +108,26 @@
                 </div>
             </div>
 
+            <h3>Currently Building:</h3>
+
+            <div class="project">
+                <h2>Async File Processing Service</h2>
+                <span>Jan 2025 – Present</span>
+                <br><br>
+                <p>
+                    • Async background worker handling Image/PDF processing<br>
+                    • Implemented a Job Queue using Redis<br>
+                    • Contains Observability & Load testing
+                </p>
+                <br>
+                <p><b>Tech Stack: </b>FastAPI, PostgreSQL, Redis, Traefik, Docker</p>
+                <br>
+                <div>
+                    <a href="https://github.com/rajsekharde/async-file-processing" target="_blank" rel="noopener noreferrer">
+                        GitHub Repository
+                    </a>
+                </div>
+
         </section>
 
         <section id="education">
@@ -111,7 +138,7 @@
                 <div class="milestone">
                     <div class="circle"></div>
                     <div class="edu-content">
-                        <h3>National Institute of Technology, Agartala</h3>
+                        <h2>National Institute of Technology, Agartala</h2>
                         <p>B.Tech - Computer Science & Engineering</p>
                         <span>2024 – Present</span>
                     </div>
@@ -120,7 +147,7 @@
                 <div class="milestone">
                     <div class="circle"></div>
                     <div class="edu-content">
-                        <h3>Sri Sri Ravishankar Vidyamandir, Agartala</h3>
+                        <h2>Sri Sri Ravishankar Vidyamandir, Agartala</h2>
                         <p>CBSE - Science Stream</p>
                         <span>2022 – 2024</span>
                     </div>
@@ -129,7 +156,7 @@
                 <div class="milestone">
                     <div class="circle"></div>
                     <div class="edu-content">
-                        <h3>Holy Cross School, Agartala</h3>
+                        <h2>Holy Cross School, Agartala</h2>
                         <p>ICSE</p>
                         <span>2009 – 2022</span>
                     </div>
@@ -141,22 +168,14 @@
         <section id="contact">
             <h1>Contact</h1>
             <hr>
-            <p><b>Email: </b>rajsekharde612@gmail.com</b></p>
-            <br>
-            <div>
-                <form onsubmit="sendMessage(event)">
-                    <input placeholder="Your Name" required />
-                    <input type="email" placeholder="Email" required />
-                    <textarea rows="5" placeholder="Message"></textarea>
-                    <button type="submit">Send</button>
-                </form>
-
-                <p id="msg"></p>
-            </div>
+            <p><b>Email: </b>rajsekharde612@gmail.com<br>
+                <br>
+                <b>3D Art: </b>rdgraphics3d@gmail.com
+            </p>
         </section>
     </main>
 
-    <script src="script.js?v=2"></script>
+    <script src="script.js?v=3"></script>
 </body>
 
 </html>
