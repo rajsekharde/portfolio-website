@@ -119,8 +119,8 @@ h1 {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-bottom: 80px;
-    gap: 5vw;
+    margin-bottom: 0px;
+    gap: 10vw;
     /* background: #2563eb; */
 }
 
@@ -134,6 +134,11 @@ h1 {
 .socials a:hover {
     color: #2563eb;
 }
+
+.socials-hr {
+    margin: 10px;
+}
+
 
 #glazeDiv {
     display: flex;
@@ -328,7 +333,7 @@ html {
 
     .socials {
         justify-content: center;
-        margin-bottom: 40px;
+        margin-bottom: 0px;
     }
 
     /* #headline-div h1 {
