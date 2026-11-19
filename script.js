@@ -31,7 +31,26 @@ const observer = new IntersectionObserver(entries => {
         }
     });
 }, {
-    threshold: 0.6
+    // Triggers when the section crosses a band near the top-middle of the viewport
+    rootMargin: "-15% 0px -60% 0px",
+    threshold: 0
 });
 
 sections.forEach(sec => observer.observe(sec));
+
+
+// Copy email address
+const copyBtn = document.getElementById("copyEmailBtn");
+if (copyBtn) {
+    copyBtn.addEventListener("click", async () => {
+        try {
+            await navigator.clipboard.writeText("contact@rajsekharde.com");
+            copyBtn.textContent = "Copied";
+            setTimeout(() => {
+                copyBtn.textContent = "Copy";
+            }, 2000);
+        } catch {
+            copyBtn.textContent = "Copy failed";
+        }
+    });
+}

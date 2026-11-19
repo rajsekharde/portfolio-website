@@ -9,7 +9,7 @@ Live Demo: https://rajsekharde.com
 Deployed automatically on push to GitHub using Cloudflare Pages
 
 ```bash
-git push -> Cloudflare Pages fetches git repo -> Site build & Deployed
+git push -> Cloudflare Pages fetches git repo -> Site built & Deployed
 ```
 
 DNS records, Proxy & TLS Managed using Cloudflare
@@ -49,3 +49,4 @@ document.querySelectorAll(".section-link").forEach(link => {
 });
 ```
 
+## Fixes

@@ -37,7 +37,7 @@
                 <img src="./media/RD.webp" alt="Profile Photo" class="profile-pic" />
                 <div id="headline-div">
                     <h1>Rajsekhar De</h1>
-                    <p class="headline">Backend Developer • CS Undergrad</p>
+                    <p class="headline">Computer Science Undergrad • Backend Developer</p>
                 </div>
             </div>
             <hr class="socials-hr">
@@ -48,34 +48,38 @@
                 <a href="https://linkedin.com/in/rajsekhar-de-5a080631a" target="_blank" rel="noopener noreferrer">
                     LinkedIn
                 </a>
-                <a href="https://www.fiverr.com/s/LdAYx7Y" target="_blank" rel="noopener noreferrer">
-                    Fiverr
+                <a href="./media/Resume.pdf" download="Resume_Rajsekhar_De.pdf">
+                    Resume
                 </a>
             </div>
             <hr class="socials-hr">
             <br>
             <h1>About Me</h1>
+            </div>
             <hr>
             <p>
-                I'm a 2nd year Computer Science student focused on backend systems,
-                containerized deployments and Infrastructure automation.<br>I also
-                freelance part time as a 3D Artist.
+                I'm a 3rd-year Computer Science student focused on backend and cloud engineering.
+                I build systems and developer tools in Go and C, and deploy containerized services
+                to cloud platforms. Outside of backend work, I also freelance part-time as a
+                <a href="https://www.fiverr.com/s/LdAYx7Y" target="_blank" rel="noopener noreferrer" id="graphicsLink">
+                    3D artist
+                </a>.
             </p>
 
             <div id="glazeDiv">
                 <div class="glaze">
                     <h2>Languages</h2>
-                    <p>C, C++, Python, Go</p>
+                    <p>Go, C, C++, SQL, Python</p>
                     <br>
                     <h2>Backend</h2>
-                    <p>FastAPI, SQLModel, Traefik</p>
+                    <p>Gin, FastAPI, JWT, REST, gRPC, RabbitMQ</p>
                 </div>
                 <div class="glaze">
                     <h2>Databases</h2>
-                    <p>PostgreSQL, Redis, SQLite</p>
+                    <p>PostgreSQL, Redis</p>
                     <br>
-                    <h2>Tools & Technologies</h2>
-                    <p>Docker, Git, Linux, Bash Scripting, AWS, Prometheus stack</p>
+                    <h2>Cloud & DevOps</h2>
+                    <p>Docker, AWS, GitHub Actions, Linux, Bash Scripting</p>
                 </div>
             </div>
         </section>
@@ -85,46 +89,64 @@
             <hr>
 
             <div class="project">
-                <h2>Full Stack Notes App</h2>
-                <span>Dec 2025</span>
-                <br><br>
+                <h2>GopherFind - Web Search Engine</h2>
+                <br>
+
                 <p>
-                    • Designed REST API handling auth + CRUD operations<br>
-                    • Implemented JWT Authentication<br>
-                    • Dockerized stack with reverse proxy<br>
-                    • Deployed on AWS EC2
+                    • Built a concurrent web crawler along with indexing and ranking modules in Go<br>
+                    • Built and stored an inverted index in a binary serialized file for faster loading<br>
+                    • Implemented TF-IDF scoring to rank search results<br>
+                    • Exposed the search engine via a REST API and a CLI client
                 </p>
                 <br>
-                <p><b>Tech Stack: </b>FastAPI, React, PostgreSQL, Traefik, Docker, Alembic</p>
+                <p><b>Tech Stack: </b>Go, REST</p>
                 <br>
                 <div>
-                    <a href="https://github.com/rajsekharde/Notes-App" target="_blank" rel="noopener noreferrer">
-                        GitHub Repository
-                    </a>
-                    <br><br>
-                    <a href="https://notes-app.rajsekharde.com" target="_blank" rel="noopener noreferrer">
-                        Live Deployment
+                    <a href="https://github.com/rajsekharde/gopherfind" target="_blank" rel="noopener noreferrer">
+                        GitHub Repository →
                     </a>
                 </div>
             </div>
 
-            <h3>Currently Building:</h3>
-
             <div class="project">
-                <h2>Async File Processing Service</h2>
-                <span>Jan 2026 – Present</span>
-                <br><br>
+                <h2>HTTP Server</h2>
+                <br>
                 <p>
-                    • Async background worker handling Image/PDF processing<br>
-                    • Implemented a Job Queue using Redis<br>
-                    • Contains Monitoring & Load testing
+                    • Built a multithreaded HTTP server in C using TCP sockets<br>
+                    • Used pthreads and a custom thread pool for handling concurrent connections<br>
+                    • Built routing, request parsing and response generation modules<br>
+                    • Containerized the application using Docker
                 </p>
                 <br>
-                <p><b>Tech Stack: </b>FastAPI, PostgreSQL, Redis, Traefik, Docker</p>
+                <p><b>Tech Stack: </b>C, TCP Sockets, Docker</p>
                 <br>
                 <div>
-                    <a href="https://github.com/rajsekharde/async-file-processing" target="_blank" rel="noopener noreferrer">
-                        GitHub Repository
+                    <a href="https://github.com/rajsekharde/http-server-c" target="_blank" rel="noopener noreferrer">
+                        GitHub Repository →
+                    </a>
+                </div>
+            </div>
+
+            <h3>Ongoing Projects:</h3>
+
+            <div class="project">
+                <h2>Event Ticket Booking System</h2>
+                <br>
+
+                <p>
+                    • Built a microservices-based event ticket booking system<br>
+                    • Used REST for client-server API and gRPC for inter-service communication<br>
+                    • Integrated a message queue and background workers for asynchronous tasks<br>
+                    • Containerized the services with Docker and orchestrated using Docker Compose<br>
+                    • Configured a CI/CD pipeline for automated testing, image builds, and cloud deployment
+                </p>
+                <br>
+                <p><b>Tech Stack: </b>Go/Gin, PostgreSQL, RabbitMQ, Docker, AWS, GitHub Actions</p>
+                <br>
+                <div>
+                    <a href="https://github.com/rajsekharde/ticketing-microservices" target="_blank"
+                        rel="noopener noreferrer">
+                        GitHub Repository →
                     </a>
                 </div>
 
@@ -168,8 +190,19 @@
         <section id="contact">
             <h1>Contact</h1>
             <hr>
-            <p><b>Email: </b>rdgraphics3d@gmail.com
+            <p>
+                Open to backend & cloud roles,
+                projects, or collaborations.
             </p>
+            <br>
+            <br>
+            <p>
+                <b>Email: </b>
+                <a href="mailto:contact@rajsekharde.com" class="contact-value">
+                    rdgraphics3d@gmail.com
+                </a>
+            </p>
+            <button type="button" id="copyEmailBtn">Copy</button>
         </section>
     </main>
 
